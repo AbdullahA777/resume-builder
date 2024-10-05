@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutApp = () => {
   return (
@@ -15,11 +16,19 @@ const AboutApp = () => {
               fresh graduate, our tool offers a variety of templates and
               customization options to suit your style.
             </p>
+
             <div className="flex items-center justify-center ">
-              <button className="px-8 py-4 text-white bg-blue-500 rounded-full text-lg font-bold transition duration-500 ease-in-out transform hover:scale-110 hover:bg-indigo-600 hover:shadow-xl">
-                Build Your Resume!
-              </button>
+              <Link
+              to="/resume-builder"
+              >
+                <button 
+                className="px-8 py-4 text-white bg-blue-500 rounded-full text-lg font-bold 
+                transition duration-500 ease-in-out transform hover:scale-110 hover:bg-indigo-600 hover:shadow-xl">
+                  Build Your Resume!
+                </button>
+              </Link>
             </div>
+
           </div>
           <div className="lg:w-1/2">
             <img

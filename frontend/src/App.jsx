@@ -1,8 +1,7 @@
-import AboutApp from "./components/About"
-import BuildCV from "./components/BuildCV"
+
 import Footer from "./components/footer"
 import Header from "./components/Header"
-
+import { Outlet } from "react-router-dom"
 
 function App() {
 
@@ -10,8 +9,8 @@ function App() {
     <div className="flex flex-col min-h-screen">
     <Header />
     <main className="flex-grow">
-      <AboutApp />
-      <BuildCV />
+      <Outlet />
+      
     </main>
     <Footer />
   </div>
